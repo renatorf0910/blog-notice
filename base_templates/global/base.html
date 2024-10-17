@@ -1,0 +1,17 @@
+{% include "notices/partials/head.html" %}
+
+<body>
+    {% include "notices/partials/header.html" %}
+    {% include "notices/partials/search.html" %}
+
+    <main class="main-content-container">
+        {% block content %}
+            
+        {% endblock content %}
+        
+    </main>
+
+    {% include 'notices/partials/footer.html' %}
+</body>
+
+</html>
