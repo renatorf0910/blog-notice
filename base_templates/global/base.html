@@ -1,4 +1,12 @@
-{% include "notices/partials/head.html" %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    {% include "notices/partials/head.html" %}
+    <title>{% block title %}{% endblock title %} | Notices</title>
+
+</head>
 
 <body>
     {% include "notices/partials/header.html" %}
@@ -6,7 +14,7 @@
 
     <main class="main-content-container">
         {% block content %}
-            
+
         {% endblock content %}
         
     </main>

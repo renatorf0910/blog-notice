@@ -157,6 +157,7 @@ body {
 
 .notice-list-item {
     max-width: 64rem;
+    height: fit-content;
 }
 
 .notice-list-item:hover {
@@ -167,6 +168,18 @@ body {
 .notice-title-container {
     padding: var(--spacing-gutter-medium);
     padding-bottom: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.notice-title-container h2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .notice-author {
@@ -176,6 +189,20 @@ body {
 .notice-content {
     padding: var(--spacing-gutter-medium);
     padding-top: 2rem;
+    height: 20rem;
+}
+
+.notice-cover {
+    width: 100%;
+    height: 24rem;
+    overflow: hidden;
+}
+
+.notice-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .notice-author-item {
@@ -224,6 +251,10 @@ body {
 
 .notice-footer a:hover {
     filter: brightness(2);
+}
+
+.notice-detail {
+    padding: var(--spacing-gutter-large);
 }
 
 .main-footer {
